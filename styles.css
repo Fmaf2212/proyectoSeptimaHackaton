@@ -30,6 +30,10 @@
   font-weight: lighter;
 }
 
+.font-colorWhite {
+  color: white;
+}
+
 /*ESPACIO SEGURO*/
 .content {
   max-width: 1290px;
@@ -121,6 +125,10 @@
   text-align: center;
 }
 
+.articles__allArticles h3 {
+  color: #3D74B0;
+}
+
 .articles__allArticles article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,7 +177,7 @@
 
 .articles__allArticles__block .bloqueInferiorArticle .info span:nth-child(1) {
   color: #1F3F68;
-  font-weight: 600;
+  font-weight: bolder;
   margin-bottom: 10px;
 }
 
@@ -207,7 +215,7 @@
 
 .articles__allArticles__block .oldAndNewPost span {
   padding: 0 20px;
-  color: #5D8BBD;
+  color: #3D74B0;
 }
 
 .articles__searchBox {
@@ -241,6 +249,10 @@
   border-radius: 5px;
 }
 
+.articles__popularsArticles h3 {
+  color: #3D74B0;
+}
+
 .articles__popularsArticles__block {
   display: -ms-grid;
   display: grid;
@@ -258,6 +270,14 @@
 
 .articles__popularsArticles__block article:nth-child(1) {
   grid-column: 1/-1;
+}
+
+.articles__popularsArticles__block__blockInfo {
+  width: 70%;
+}
+
+.articles__popularsArticles__block__blockInfo h2 {
+  color: #1F3F68;
 }
 
 .articles__popularsArticles__block__blockInfo__bloqueInferiorArticle {
@@ -287,8 +307,8 @@
 
 .articles__popularsArticles__block__blockInfo span:nth-child(1) {
   color: #1F3F68;
-  font-weight: 600;
   margin-bottom: 10px;
+  font-weight: bolder;
 }
 
 .articles__popularsArticles__block .debajo {
@@ -300,6 +320,10 @@
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   margin: 10px 0px 0 10px;
+}
+
+.articles__popularsArticles__block .debajo h2 {
+  color: #1F3F68;
 }
 
 .articles__popularsArticles__block article:nth-child(2) {
@@ -318,6 +342,19 @@
 
 .articles__popularsArticles__block .debajo .bloqueInferiorArticle .info {
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.articles__popularsArticles__block .debajo .bloqueInferiorArticle .info span:nth-child(1) {
+  color: #1F3F68;
+  font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 .articles__popularsArticles__block .debajo img {
@@ -337,7 +374,9 @@
 }
 
 .articles__division span {
-  margin: 40px 0 20px auto;
+  margin: 60px 0 20px auto;
+  color: #3D74B0;
+  font-weight: bold;
 }
 
 .intersted {
@@ -345,14 +384,17 @@
   height: 350px;
   width: 100%;
   border-radius: 0 150px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border-bottom: 2px solid #83A0C2;
 }
 
+.intersted__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .intersted__texto {
-  padding: 60px 0 60px 350px;
+  padding: 60px 0;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,14 +422,14 @@
 }
 
 .intersted__button {
-  padding: 100px 400px 100px 0;
+  padding: 100px 0;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -404,22 +446,25 @@
 
 .footer {
   background-color: #316099;
-  color: white;
-  padding: 60px;
+  color: #FFFFFF;
 }
 
 .footer__contenido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__contenido a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
+}
+
+.footer__bloque1 {
+  color: #FFFFFF;
 }
 
 .footer__bloque1__bloque1hijos {
@@ -440,13 +485,7 @@
           justify-content: flex-start;
 }
 
-.footer__bloque2 a:nth-child(1) {
-  font-size: 24px;
-  font-weight: 600;
-  padding-bottom: 20px;
-}
-
-.footer__bloque3 {
+.footer__bloque2, .footer__bloque3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,6 +496,12 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.footer__bloque2 a:nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 20px;
 }
 
 .footer__bloque3 a:nth-child(1) {

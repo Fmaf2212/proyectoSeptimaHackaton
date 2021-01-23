@@ -2,6 +2,10 @@
     
     &__allArticles{
         
+        h3{
+            color: $second-Color;
+        }
+
         article{
             display: flex;
             flex-direction: row-reverse;
@@ -15,7 +19,7 @@
         &__block article h2{
             margin: 10px 0;
             font-size: 20px;
-            color: #1F3F68;
+            color: $first-Color;
         }
         
         &__block article p{
@@ -35,8 +39,8 @@
         }
 
         &__block .bloqueInferiorArticle .info span:nth-child(1){
-            color: #1F3F68;
-            font-weight: 600;
+            color: $first-Color;
+            font-weight: bolder;
             margin-bottom: 10px;
         }
 
@@ -59,7 +63,7 @@
 
         &__block .oldAndNewPost span{
             padding: 0 20px;
-            color: #5D8BBD;
+            color: $second-Color;
         }
         
     }
