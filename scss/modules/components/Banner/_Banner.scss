@@ -1,0 +1,23 @@
+.banner{
+    background: url('img/fondo1.jpg');
+    background-size: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+        color: $third-Color;
+        font-weight: 400;
+        font-size: $s;
+    }
+
+    &__p{
+        color: $textBanner;
+        width: 40%;
+        font-size: $xs;
+        line-height: 1.8;
+        text-align: center;
+    }
+}

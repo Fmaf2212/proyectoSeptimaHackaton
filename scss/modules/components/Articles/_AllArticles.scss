@@ -1,0 +1,66 @@
+.articles{
+    
+    &__allArticles{
+        
+        article{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 30px;
+        }
+
+        article img{
+            padding-right: 20px;
+        }
+
+        &__block article h2{
+            margin: 10px 0;
+            font-size: 20px;
+            color: #1F3F68;
+        }
+        
+        &__block article p{
+            margin: 20px 20px 20px 0;   
+        }
+        
+        &__block .bloqueInferiorArticle{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+
+        &__block .bloqueInferiorArticle .info{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+
+        &__block .bloqueInferiorArticle .info span:nth-child(1){
+            color: #1F3F68;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        &__block .oldAndNewPost{
+            display: flex;
+            justify-content: space-between;
+            margin: 60px 0;
+        }
+
+        &__block .oldAndNewPost .left{
+            display: flex;
+            align-items: center;
+        }
+
+        &__block .oldAndNewPost .right{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        &__block .oldAndNewPost span{
+            padding: 0 20px;
+            color: #5D8BBD;
+        }
+        
+    }
+}

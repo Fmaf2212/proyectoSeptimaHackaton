@@ -1,0 +1,110 @@
+.articles{
+
+    &__searchBox{
+        width: 100%;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+        display: flex;
+        margin: 20px 0;
+    }
+
+    &__searchImg{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    &__searchInput{
+        width: 100%;
+        height: 50px;
+        background: #F4F4F4;
+        border: none;
+        font-size: 14px;
+        float: right;
+        color: #63717f;
+        padding-left: 65px;
+        border-radius: 5px;
+    }
+
+    &__popularsArticles{
+
+        &__block{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            article{
+                display: flex;
+            }
+
+            article:nth-child(1){
+                grid-column: 1/-1;
+            }
+
+            &__blockInfo{
+                
+                &__bloqueInferiorArticle{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-right: 20px;
+
+                    img{
+                        width: inherit;
+                    }
+                }
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                }
+
+                span:nth-child(1){
+                    color: #1F3F68;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+            }
+
+            .debajo{
+                display: flex;
+                flex-direction: column-reverse;
+                margin: 10px 0px 0 10px;
+            }
+
+            article:nth-child(2){
+                margin-left: 0;
+            }
+
+            .debajo .bloqueInferiorArticle{
+                display: flex;
+                justify-content: space-between;
+                margin-right: 20px;
+            }
+            
+            .debajo .bloqueInferiorArticle .info{
+                width: 60%;
+            }
+
+            .debajo img{
+                height: 100%;
+            }
+        }
+    }
+
+    &__division{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #A3A3A3;
+
+        span{
+            margin: 40px 0 20px auto;
+        }
+    }
+
+}
